@@ -1,0 +1,64 @@
+* {
+	margin:0;
+}
+body {
+	display: flex;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: linear-gradient( blue, red);
+	
+}
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+	
+}
+.card {
+	display:block;
+	background-color:white;
+	overflow: hidden;
+	margin:5px;
+	height: 20rem;
+	width: 13rem;
+	border-radius: 10px;
+
+}
+
+.card .card-head {
+	background-image: linear-gradient(red , orange);
+	height : 7rem;
+	clip-path: ellipse(60% 60% at 50% 30%);
+}
+
+.card .card-head h1 {
+	text-align: center;
+	padding-top: 1rem;
+	color: white;
+}
+
+.card .card-body {
+	position: relative;
+	margin: 0px 10px 40px 10px;
+	background-color: white ;
+	height: 12em;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.card .card-body p {
+	text-align:center;
+	justify-self:center;
+	align-self: center;
+	padding-top: 3rem;
+}
+@media (max-width: 768px){
+	.container {
+		flex-direction :column;
+	}
+}
