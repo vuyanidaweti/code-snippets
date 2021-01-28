@@ -1,1 +1,1 @@
-This a card that hovers 
+This is a card that hovers 
