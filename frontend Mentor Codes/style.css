@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lato:ital@1&family=Lexend+Deca&display=swap');
+body {
+    font-size: 15px;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 20% 0 20%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card.one {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card.two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card.three {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card .card-header {
+    font-family: 'Big Shoulders Display', cursive;
+    padding-top: 2em;
+}
+
+.card .card-body {
+    padding-bottom: 1rem;
+}
+
+.card .card-body p {
+    padding-bottom: 5rem;
+}
+
+.card .card-body a {
+    background-color: white;
+    text-decoration: none;
+    padding: .5rem 1rem .5rem 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card.one .card-body a {
+    color: hsl(31, 77%, 52%)
+}
+
+.card.two .card-body a {
+    color: hsl(184, 100%, 22%)
+}
+
+.card.three .card-body a {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width:768px) {
+    .card-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:375px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    .card.one {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .card.three {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: gray;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
